@@ -1,0 +1,263 @@
+:root {
+    --themeColor: rgb(49, 49, 255);
+    --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    /* box-shadow: var(--shadow); */
+}
+
+header h1 {
+    padding: 0rem;
+}
+
+header h1 span,
+footer span {
+    color: var(--themeColor)
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+    font-weight: 300;
+}
+
+
+nav a:hover {
+    color: var(--themeColor);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100wh;
+    height: 70vh;
+    background-image: url("/img/bg.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 80%;
+    line-height: 2.7rem;
+    margin-bottom: 2rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+}
+
+.intro p {
+    width: 60%;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.container>h1 {
+    border-bottom: 5px solid rgb(170, 170, 255);
+    margin-top: 1rem;
+}
+
+.secondIntro {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondIntro p {
+    text-align: justify;
+}
+
+.info {
+    width: 80%;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.recentWorks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    box-shadow: var(--shadow);
+    padding: 1rem 0.2rem;
+    border-radius: 5px;
+    margin: 0 1rem;
+    text-align: justify;
+    font-weight: 100;
+}
+
+.card:hover {
+    transition: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card h4 {
+    margin-top: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+}
+
+.card h4,
+.card p {
+    width: 90%;
+}
+
+.card p {
+    margin-top: 1rem;
+    color: grey;
+}
+
+
+.service {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.serviceCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    box-shadow: var(--shadow);
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    margin: 0 1rem;
+    text-align: justify;
+    font-weight: 100;
+    margin-top: 1rem;
+}
+
+.serviceCard h2 {
+    color: var(--themeColor);
+}
+
+.serviceCard {
+    color: grey;
+}
+
+summary h1 {
+    color: var(--themeColor);
+
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+/* ************** About Page ************** */
+
+
+iframe {
+    margin: 2rem 0;
+}
+
+
+/* ************* contact Page ************** */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 2rem;
+}
+
+
+.name input {
+    width: 35%;
+}
+
+.name select {
+    border: none;
+    outline: none;
+}
+
+form>input {
+    width: 80%;
+}
+
+form textarea {
+    width: 80%;
+    padding: 1rem;
+}
+
+form input {
+    border: none;
+    margin: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+}
